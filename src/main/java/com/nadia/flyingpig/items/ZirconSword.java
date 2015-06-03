@@ -1,21 +1,24 @@
 package com.nadia.flyingpig.items;
 
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.item.ItemStack;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemSword;
-import net.minecraft.potion.PotionEffect;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ZirconSword extends ItemSword {
 
-	public ZirconSword(ToolMaterial p_i45356_1_) {
-		super(p_i45356_1_);
-		// TODO Auto-generated constructor stub
+	private final String name = "zircon_sword";
+	public ZirconSword(ToolMaterial material) {
+		super(material);
+		
+    	setUnlocalizedName(name);
+    	setCreativeTab(CreativeTabs.tabTools);
+    	GameRegistry.registerItem(this, name);
+	}
+	
+	public String getName() {
+		return name;
 	}
 
-	/**
-	public boolean hitEntity(ItemStack par1, EntityLivingBase enemy, EntityLivingBase yourself) {
-		yourself.addPotionEffect(new PotionEffect(1, 1000, 5));
-		return false;
-	}
-	**/
 }

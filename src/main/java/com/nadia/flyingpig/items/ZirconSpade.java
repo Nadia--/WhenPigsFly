@@ -1,12 +1,23 @@
 package com.nadia.flyingpig.items;
 
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemSpade;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ZirconSpade extends ItemSpade {
 
-	public ZirconSpade(ToolMaterial p_i45353_1_) {
-		super(p_i45353_1_);
-		// TODO Auto-generated constructor stub
+	private final String name = "zircon_spade";
+	public ZirconSpade(ToolMaterial material) {
+		super(material);
+		
+    	setUnlocalizedName(name);
+    	setCreativeTab(CreativeTabs.tabTools);
+    	GameRegistry.registerItem(this, name);
+	}
+	
+	public String getName() {
+		return name;
 	}
 
 }

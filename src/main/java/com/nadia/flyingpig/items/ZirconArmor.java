@@ -1,9 +1,11 @@
 package com.nadia.flyingpig.items;
 
-import com.nadia.flyingpig.WhenPigsFlyMod;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
+
+import com.nadia.flyingpig.FlyingPigItems;
+import com.nadia.flyingpig.Reference;
 
 public class ZirconArmor extends ItemArmor {
 
@@ -14,10 +16,10 @@ public class ZirconArmor extends ItemArmor {
 	
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type) {
 		//The leggings are stored on layer_2, the rest are stored on layer_1
-		if (stack.getItem() == WhenPigsFlyMod.zirconLeggings) {
-			return WhenPigsFlyMod.MODID + ":models/armor/zircon_layer_2.png";
+		if (stack.getItem() == FlyingPigItems.zirconLeggings) {
+			return Reference.MOD_ID + ":models/armor/zircon_layer_2.png";
 		} else {
-			return WhenPigsFlyMod.MODID + ":models/armor/zircon_layer_1.png";
+			return Reference.MOD_ID + ":models/armor/zircon_layer_1.png";
 		}
 	}
 

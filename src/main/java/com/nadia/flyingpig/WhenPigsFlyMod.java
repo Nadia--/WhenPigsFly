@@ -26,7 +26,7 @@ import net.minecraftforge.fml.common.registry.EntityRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 
-import com.nadia.flyingpig.entity.FlyingPig;
+import com.nadia.flyingpig.entity.Entity_FlyingPig;
 import com.nadia.flyingpig.items.ZirconArmor;
 import com.nadia.flyingpig.items.ZirconAxe;
 import com.nadia.flyingpig.items.ZirconPickaxe;
@@ -34,14 +34,14 @@ import com.nadia.flyingpig.items.ZirconSpade;
 import com.nadia.flyingpig.items.ZirconSword;
 import com.nadia.flyingpig.proxies.CommonProxyVT;
  
-@Mod(modid = WhenPigsFlyMod.MODID, version = WhenPigsFlyMod.VERSION)
+//@Mod(modid = WhenPigsFlyMod.MODID, version = WhenPigsFlyMod.VERSION)
 public class WhenPigsFlyMod
 {
 	
 	//@SidedProxy(clientSide = "com.example.visiontech.proxies.ClientProxyVT", serverSide = "com.example.visiontech.proxies.CommonProxyVT")
 	//public static CommonProxyVT proxy;
 	
-    public static final String MODID = "flyingpig";
+    public static final String MODID = "diff";
     public static final String VERSION = "1.0";
     
     //@Instance(MODID)
@@ -218,7 +218,6 @@ public class WhenPigsFlyMod
             	renderItem.getItemModelMesher().register(zirconPickaxe, 0, new ModelResourceLocation(WhenPigsFlyMod.MODID + ":" + ((ZirconPickaxe) zirconPickaxe).getName(), "inventory"));
         }
         
-    
     } 
     
     /**
