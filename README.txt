@@ -13,5 +13,6 @@ src - this is my current src folder for the Flying Pig mod for MC 1.8.
 
 ************************
 Progress
-Zircon tools and weapons added to the game - 6/3/15
+6/3/15 - Zircon tools and weapons added to the game 
+6/3/15 - Zircon armor and armor textures added to the game; Layer_1 has not been re-colored properly though.  I'm afraid this funky coloring is also in the MC 1.7 version. 
 

@@ -13,7 +13,7 @@ public class ZirconSword extends ItemSword {
 		super(material);
 		
     	setUnlocalizedName(name);
-    	setCreativeTab(CreativeTabs.tabTools);
+    	setCreativeTab(CreativeTabs.tabCombat);
     	GameRegistry.registerItem(this, name);
 	}
 	

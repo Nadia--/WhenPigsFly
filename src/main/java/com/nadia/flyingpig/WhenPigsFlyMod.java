@@ -89,7 +89,6 @@ public class WhenPigsFlyMod
     	//Zircon Pickaxe
     	zirconPickaxe = new ZirconPickaxe(zirconToolMaterial);
     	
-     	
     	GameRegistry.addShapedRecipe(new ItemStack(zirconPickaxe), new Object[] {
     		"ZZZ",
     		" I ",
